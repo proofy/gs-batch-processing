@@ -1,3 +1,5 @@
+import java.lang.invoke.LambdaForm.Compiled;
+
 buildscript {
     repositories {
         mavenCentral()
@@ -27,6 +29,9 @@ targetCompatibility = 1.8
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-batch")
     compile("org.hsqldb:hsqldb")
+	compile("org.jsoup:jsoup:1.9.1")
+	compile('bsf:bsf:2.4.0')
+	compile('org.jruby:jruby-complete:9.0.5.0')
     testCompile("junit:junit")
 }
 
